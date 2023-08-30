@@ -30,7 +30,5 @@
             get { return _peso; }
             set { _peso = value; }
         }
-
-        public abstract double CalcularPreco();
     }
 }
