@@ -6,6 +6,13 @@
         private string _dataValidade;
         private double _peso;
 
+        public Prato(double precoVenda, string dataValidade, double peso)
+        {
+            _precoVenda = precoVenda;
+            _dataValidade = dataValidade;
+            _peso = peso;
+        }
+
         public double PrecoVenda
         {
             get { return _precoVenda; }
