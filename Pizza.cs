@@ -30,5 +30,10 @@
             get { return _molho; }
             set { _molho = value; }
         }
+
+        public override string ToString()
+        {
+            return $"{_recheio}, {_borda}, {_molho} -  R$ {base.PrecoVenda}";
+        }
     }
 }
