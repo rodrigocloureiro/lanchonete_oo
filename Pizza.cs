@@ -23,5 +23,10 @@
             get { return _molho; }
             set { _molho = value; }
         }
+
+        public override double CalcularPreco()
+        {
+            return 0;
+        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace lanchonete_OO
 {
-    public class Prato
+    public abstract class Prato
     {
         private double _precoVenda;
         private string _dataValidade;
@@ -23,5 +23,7 @@
             get { return _peso; }
             set { _peso = value; }
         }
+
+        public abstract double CalcularPreco();
     }
 }
