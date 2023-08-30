@@ -4,7 +4,7 @@
     {
         private string _nomeCliente;
         private double _taxaServico;
-        private Prato[] _itensConsumidos;
+        private List<Prato> _itensConsumidos;
 
         public string NomeCliente
         {
@@ -18,7 +18,7 @@
             set { _taxaServico = value; }
         }
 
-        public Prato[] ItensConsumidos
+        public List<Prato> ItensConsumidos
         {
             get { return _itensConsumidos; }
             set { _itensConsumidos = value; }
