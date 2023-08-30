@@ -5,6 +5,13 @@
         private string _recheio;
         private string _borda;
         private string _molho;
+         
+        public Pizza(double precoVenda, string dataValidade, double peso, string recheio, string borda, string molho) : base(precoVenda, dataValidade, peso)
+        {
+            _recheio = recheio;
+            _borda = borda;
+            _molho = molho;
+        }
 
         public string Recheio
         {
