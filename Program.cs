@@ -39,6 +39,7 @@ public class Program
                 case 0:
                     Console.Clear();
                     break;
+
                 case 1:
                     itensConsumidos.Add(new Pizza(48.00, "30/09/2023", 480.00, "Calabresa", "Catupiry", "Tradicional"));
                     break;
@@ -49,9 +50,9 @@ public class Program
         }
 
         pedido.ItensConsumidos = itensConsumidos;
-        Console.Write("Valor a ser pago: ");
-        Console.WriteLine($"Cliente: {pedido.NomeCliente}");
-        pedido.GerarNotaFiscal(150.00);
+        Console.WriteLine($"Valor do pedido: {pedido.CalcularTotal():F2}");
+        Console.Write("Valor pago: ");
+        pedido.GerarNotaFiscal(double.Parse(Console.ReadLine()));
 
         Console.ReadKey();
     }
